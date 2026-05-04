@@ -3,52 +3,50 @@
 
 > *"Mieux vaut un pare-feu bien configuré qu'une brèche silencieuse."*
 
-Ce projet plonge au cœur de la sécurité périmétrique Linux. Plutôt que de simplement documenter des commandes, nous avons adopté une démarche **"Red Team vs Blue Team"** : simuler des vulnérabilités réelles pour comprendre comment les neutraliser efficacement avec **UFW (Uncomplicated Firewall)**.
+Ce projet n'est pas une simple configuration de pare-feu. C'est une immersion complète dans le cycle de vie d'une vulnérabilité : de son exploitation brutale à sa neutralisation chirurgicale. En tant qu'étudiants à l'**EMI**, nous avons relevé le défi de transformer un système poreux en une forteresse numérique.
 
 ---
 
-## 🎯 La Philosophie du Projet
-La compétence d'un ingénieur en cybersécurité ne se résume pas à savoir appliquer des règles. Elle réside dans la capacité à **comprendre l'attaquant**, à interpréter les traces qu'il laisse, et à concevoir des contre-mesures qui tiennent la route en production.
+## 🎯 Pourquoi ce projet me définit
 
-Dans ce projet, nous avons bâti un laboratoire isolé pour :
-1.  **Simuler** des vecteurs d'attaques réalistes (Kali Linux).
-2.  **Analyser** les logs système pour comprendre l'impact d'une intrusion.
-3.  **Durcir** le système avec des règles UFW stratégiques.
+Au-delà des lignes de commande, ce projet a été le terrain d'expression de mes piliers professionnels :
+
+* **🧐 Rigueur & Analyse :** En cybersécurité, le diable est dans les détails. J'ai pris un soin particulier à l'analyse des logs et à l'ordonnancement des règles UFW. Une règle placée au mauvais endroit est une porte restée ouverte ; j'ai veillé à ce que chaque instruction réponde à une menace précise.
+* **🔍 Esprit Critique :** Adopter la posture de l'attaquant (Red Team) m'a permis de ne rien laisser au hasard. Anticiper les mouvements d'un intrus pour mieux protéger l'infrastructure est, selon moi, la clé d'une sécurité proactive.
+* **🤝 Intelligence Collective :** Un système complexe ne se sécurise jamais seul. Ce projet est le fruit d'une synergie d'équipe où la communication et le partage de connaissances ont été nos meilleurs alliés.
 
 ---
 
-## 🛠️ Stack Technique
+## 🛠️ Stack Technique & Lab
 * **Systèmes :** Ubuntu 22.04 (Cible), Kali Linux (Attaquant)
-* **Pare-feu :** UFW (Front-end Iptables)
-* **Outils d'attaque :** Nmap (Reconnaissance), Hydra (Force brute), DVWA (Application web vulnérable)
-* **Services attaqués :** SSH (Port 22), Serveur HTTP Python (Port 8080), Apache/Web (Port 80)
+* **Armement :** Nmap (Reconnaissance), Hydra (Force brute), DVWA (Audit web)
+* **Défense :** UFW (Hardening), Analyse de logs `/var/log/ufw.log`
 
 ---
 
-## 🚀 Les 3 Scénarios d'Attaque
+## 🚀 Scénarios d'Intervention
 
-| Vecteur d'attaque | Risque identifié | Solution UFW déployée |
+| Vecteur d'attaque | Impact Business | Remédiation Stratégique |
 | :--- | :--- | :--- |
-| **SSH Brute Force** | Compromission de compte via Hydra | Mise en place de la règle `limit` |
-| **Exposition HTTP Python** | Fuite de données / Accès non autorisé | Bloquage strict des ports non utilisés |
-| **Attaque Web (DVWA)** | Injection & Vulnérabilités applicatives | Politique de sécurité "First Match Wins" |
+| **SSH Brute Force** | Compromission totale | Limitation dynamique des tentatives (`limit`) |
+| **Shadow IT (Python HTTP)** | Fuite de données critiques | Politique "Deny by Default" & Filtrage granulaire |
+| **Faille Applicative** | Défiguration / Exfiltration | Isolation des services & Priorisation des flux |
 
 ---
 
-## 📖 Accéder au Rapport Complet
-Pour une analyse détaillée des commandes, des logs système et de la politique de sécurité finale, vous pouvez consulter le rapport complet :
+## 🤝 Une collaboration d'excellence
+La cybersécurité est un sport d'équipe. Je tiens à saluer mes camarades de promotion avec qui j'ai eu le plaisir de confronter mes idées et de bâtir ce projet. Merci pour votre professionnalisme et votre énergie :
 
-👉 **[Télécharger le rapport technique PDF]([Rapport_Projet_Cybersecurité.pdf])**
+✨ **Abdelaziz ABOUBAKAR** | **Isaac Kaougahi DIN** | **Mohamed KAFANDO**
 
----
-
-## 👨‍💻 L'Équipe
-Ce projet a été réalisé dans le cadre du module Sécurité des Réseaux & Systèmes à l'**École Mohammadia d'Ingénieurs (EMI)** sous la direction de Mme Asmae KASSIRI.
-
-* **ABOUBAKAR Abdelaziz**
-* **DIN Isaac Kaougahi**
-* **KAFANDO Mohamed**
-* **ZOUNGRANA Abdoul Gafarou**
+Un grand merci également à **Mme Asmae KASSIRI** pour son encadrement et son expertise qui nous ont poussés à l'excellence.
 
 ---
-*Ce dépôt est un témoignage de notre engagement pour une sécurité proactive et rigoureuse.*
+
+## 📖 Approfondir la réflexion
+Le diable est dans l'implémentation. Pour découvrir les détails techniques, les captures d'écran des attaques et le rapport méthodologique complet :
+
+👉 **[Consulter le Rapport Technique (PDF)]([LIEN_VERS_VOTRE_PDF])**
+
+---
+*Ce dépôt reflète ma vision de la cybersécurité : une discipline où la technique rencontre la stratégie, portée par une rigueur constante.*
