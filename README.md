@@ -46,7 +46,7 @@ Un grand merci également à **Mme Asmae KASSIRI** pour son encadrement et son e
 ## 📖 Approfondir la réflexion
 Le diable est dans l'implémentation. Pour découvrir les détails techniques, les captures d'écran des attaques et le rapport méthodologique complet :
 
-👉 **[Consulter le Rapport Technique (PDF)]([LIEN_VERS_VOTRE_PDF])**
+👉 **[Consulter le Rapport Technique (PDF)](Rapport_Projet_Cybersecurité.pdf)**
 
 ---
 *Ce dépôt reflète ma vision de la cybersécurité : une discipline où la technique rencontre la stratégie, portée par une rigueur constante.*
