@@ -38,7 +38,7 @@ Dans ce projet, nous avons bâti un laboratoire isolé pour :
 ## 📖 Accéder au Rapport Complet
 Pour une analyse détaillée des commandes, des logs système et de la politique de sécurité finale, vous pouvez consulter le rapport complet :
 
-👉 **[Télécharger le rapport technique PDF]([LIEN_VERS_VOTRE_PDF])**
+👉 **[Télécharger le rapport technique PDF]([Rapport_Projet_Cybersecurité.pdf])**
 
 ---
 
